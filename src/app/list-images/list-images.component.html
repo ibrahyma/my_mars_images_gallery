@@ -1,0 +1,13 @@
+<div class="row" *ngIf="marsPhotos !== null && marsPhotos !== false">
+    <div class="col-md-4 col-sm-6" *ngFor="let item of marsPhotos">
+        <app-list-images-item [item]="item"></app-list-images-item>
+    </div>
+</div>
+<div class="row">
+    <div class="col" *ngIf="marsPhotos === false">
+        <p class="alert alert-danger" role="alert">Echec de connexion au serveur.</p>
+    </div>
+    <div class="col" *ngIf="marsPhotos === null">
+        <p class="alert alert-info">Il n'y a pas de photo.</p>
+    </div>
+</div>

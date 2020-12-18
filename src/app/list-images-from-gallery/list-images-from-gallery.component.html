@@ -1,0 +1,13 @@
+<div class="row" *ngIf="photosId.length > 0">
+    <div class="col" *ngFor="let id of photosId">
+        <app-list-images-from-component-item [id]="id"></app-list-images-from-component-item>
+    </div>
+</div>
+<div class="row d-flex justify-content-center" *ngIf="photosId.length == 0">
+    <div class="col-10">
+        <p class="alert alert-info">
+            Vous n'avez pas de photo dans votre galerie.<br>
+            Vous pouvez regarder les autres photos et en ajouter en vous rendant <a class="link" href="/photos">ici</a>.
+        </p>
+    </div>
+</div>

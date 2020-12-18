@@ -1,0 +1,10 @@
+<div class="card mb-4 vw-20">
+    <img [(src)]="item.img_src" class="card-img-top" [alt]="item.camera.name">
+    <div class="card-body">
+        <h5 class="card-title">{{ item.camera.name }}</h5>
+        <p class="card-text">{{ item.camera.full_name }}</p>
+        <a [href]="item.img_src" class="btn btn-primary mb-2">Voir la photo</a>
+        <button class="btn btn-success mb-2" *ngIf="!existsOnGalery" (click)="addImageHandler()">Ajouter dans la galerie</button>
+        <button class="btn btn-danger mb-2" *ngIf="existsOnGalery" (click)="deleteImageHandler()">Supprimer de la galerie</button>
+    </div>
+</div>

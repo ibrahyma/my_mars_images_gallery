@@ -1,0 +1,9 @@
+<div class="min-vh-100 bg-dark">
+    <app-navbar activeRoute="/photos"></app-navbar>
+    <div class="container-fluid">
+        <div class="h1 text-info mb-4">Recherche des images par date</div>
+        <app-date-input [onClickHandler]="onClick" [(ngModel)]="date" ngDefaultControl></app-date-input>
+        <app-list-images [marsPhotos]="marsPhotos"></app-list-images>
+    </div>
+</div>
+<router-outlet></router-outlet>

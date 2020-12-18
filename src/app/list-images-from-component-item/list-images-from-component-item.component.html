@@ -1,0 +1,9 @@
+<div class="card mb-4 w-75">
+    <img [src]="img_src" class="card-img-top h-100" [alt]="name">
+    <div class="card-body">
+        <h5 class="card-title">{{ name }}</h5>
+        <p class="card-text">{{ full_name }}</p>
+        <a [href]="img_src" class="btn btn-primary mb-2">Voir la photo</a>
+        <button class="btn btn-danger mb-2" (click)="deleteImageHandler()">Supprimer de la galerie</button>
+    </div>
+</div>

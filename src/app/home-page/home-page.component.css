@@ -1,0 +1,10 @@
+a
+{
+    transition: all .5s;
+}
+
+.home
+{
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/20/18/35/sunrise-1756274_960_720.jpg");
+    background-size: 100% 100%;
+}

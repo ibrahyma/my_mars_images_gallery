@@ -1,0 +1,16 @@
+<div class="form-row mb-4">
+    <div class="col-8">
+        <input
+            class="form-control"
+            type="date"
+            id="dateInput"
+            (change)="onChange()"
+            [(ngModel)]="date"/>
+    </div>
+    <div class="col">
+        <button
+            class="btn btn-primary"
+            [disabled]="!validable"
+            (click)="onClickHandler()">Envoyer</button>
+    </div>
+</div>
